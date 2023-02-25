@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+  body{
+  background-color:skyblue;
+  }
+</style>
+    <title>Countdown Timer</title>
+    <script>
+      var countDownDate = new Date().getTime() + 600000; // 10 minutes from now
+
+      var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("timer").innerHTML = minutes + "m " + seconds + "s ";
+
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("timer").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+  </head>
+<body>
+<form>
+   <h1>Countdown Timer</h1>
+    <p id="timer"></p>
+  <h1>Questions</h1>
+  <h3>1. Which one of the following is not a Java feature?</h3>
+  <input type="radio"   >
+  a.Object-oriented<br>
+  <input type="radio"  >
+  b.Use of pointers<br>
+  <input type="radio" >
+  c.Portable<br>
+  <input type="radio"   >
+  d.Dynamic and Extensible<br>
+  
+  <h3>2.Which of the following is not an OOPS concept in Java?</h3>
+  <input type="radio"  >
+  a.Polymorphism<br>
+  <input type="radio"  >
+  b. Inheritance<br>
+  <input type="radio"  >
+  c.Compilation<br>
+  <input type="radio"  >
+  d.Encapsulation<br>
+  
+  <h3>3.Which exception is thrown when java is out of memory?</h3>
+  <input type="radio" >
+  a.MemoryError<br>
+  <input type="radio" >
+  b.OutOfMemoryError<br>
+  <input type="radio" >
+  c.MemoryOutOfBoundsException<br>
+  <input type="radio" >
+  d.MemoryFullException<br>
+  
+  <h3>4.Which of these are selection statements in Java?</h3>
+  <input type="radio"  >
+  a.break<br>
+  <input type="radio" >
+  b.continue<br>
+  <input type="radio" >
+  c.for()<br>
+  <input type="radio" >
+  d.if()<br>
+  
+  <h3>5.Which of the below is not a Java Profiler?</h3>
+  <input type="radio" >
+  a.JProfiler<br>
+  <input type="radio" >
+  b.Eclipse Profiler<br>
+  <input type="radio" >
+  c.JVM<br>
+  <input type="radio" >
+  d.JConsole<br>
+  
+  <h3>6.Which class provides system independent server side implementation?</h3>
+  <input type="radio" >
+  a.Server<br>
+  <input type="radio" >
+  b.ServerReader<br>
+  <input type="radio" >
+  c.Socket<br>
+  <input type="radio" >
+  d.ServerSocket<br>
+  
+  <h3>7.Which of the following is true about servlets?</h3>
+   <input type="radio" >
+  a.Servlets can use the full functionality of the Java class libraries<br>
+  <input type="radio" >
+  b.Servlets execute within the address space of web server, platform independent and uses the functionality of java class libraries<br>
+  <input type="radio" >
+  c.Servlets execute within the address space of web server<br>
+  <input type="radio" >
+  d.Servlets are platform-independent because they are written in java<br>
+  
+  <h3>8.In which of the following is toString() method defined?</h3>
+  <input type="radio" >
+  a.java.lang.Object<br>
+  <input type="radio" >
+  b.java.lang.String<br>
+  <input type="radio" >
+  c.java.lang.til<br>
+  <input type="radio" >
+  d.None<br>
+  
+  <h3>9.The 'super' keyword is used to ___.</h3>
+  <input type="radio" >
+  a.Access instance of the parent class<br>
+  <input type="radio" >
+  b.Access instance of the same class<br>
+  <input type="radio" >
+  c.Access instance of child class<br>
+  <input type="radio" >
+  d.Access instance of friend class<br>
+  
+  <h3>10.Wrapper class in java is ___.</h3>
+  <input type="radio" >
+  a.Used to encapsulate primitive data types<br>
+  <input type="radio" >
+  b.Declare new classes called wrapper<br>
+  <input type="radio" >
+  c.Create a new instance of the class<br>
+  <input type="radio" >
+  d.None of these<br>
+  </form>
+  <form action="uhome.html">
+    <button>Submit</button>
+  </form>
+</body>
+</html>
